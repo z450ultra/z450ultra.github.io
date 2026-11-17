@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d19">
+<title>Omar | Tech Profile</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--bg:#080d19;--card:#111b2d;--cyan:#00e5ff;--purple:#8765ff;--text:#eaf2ff;--muted:#9aabc2}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#080d19ed;border-bottom:1px solid #1d2c43;padding:15px 7%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:23px;font-weight:bold;color:var(--cyan)}
+.logo span{color:white}
+nav{display:flex;gap:22px}
+nav a{font-size:14px;color:var(--muted);transition:.3s}
+nav a:hover{color:var(--cyan)}
+.hero{min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:65px 20px;background:radial-gradient(ellipse at top,#152c4b 0%,transparent 65%)}
+.tag{color:var(--cyan);border:1px solid #00e5ff55;padding:7px 17px;border-radius:30px;font-size:13px;margin-bottom:22px}
+.hero h1{font-size:clamp(40px,8vw,72px);line-height:1.15;margin-bottom:15px}
+.hero h1 span{background:linear-gradient(90deg,var(--cyan),var(--purple));background-clip:text;-webkit-background-clip:text;color:transparent}
+.hero p{max-width:600px;color:var(--muted);font-size:17px;margin:12px auto 28px}
+.btn{display:inline-block;background:linear-gradient(100deg,#00bcd4,#6554ed);padding:12px 27px;border-radius:8px;font-weight:bold;color:white;transition:.3s}
+.btn:hover{transform:translateY(-4px);box-shadow:0 8px 25px #00e5ff35}
+section{padding:80px 8%;scroll-margin-top:65px}
+.section-title{text-align:center;font-size:32px;margin-bottom:12px}
+.section-title span{color:var(--cyan)}
+.subtitle{text-align:center;color:var(--muted);margin-bottom:40px}
+.about{max-width:850px;margin:auto;text-align:center;color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1100px;margin:auto}
+.card{background:linear-gradient(145deg,#142239,#0d1524);border:1px solid #243751;border-radius:15px;padding:25px;transition:.3s}
+.card:hover{transform:translateY(-7px);border-color:var(--cyan);box-shadow:0 10px 30px #00e5ff12}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{color:var(--cyan);margin-bottom:10px}
+.card p{color:var(--muted);font-size:14px}
+.skill{margin:18px 0}
+.skill-head{display:flex;justify-content:space-between;margin-bottom:7px;font-size:14px}
+.bar{height:8px;background:#26354a;border-radius:20px;overflow:hidden}
+.bar span{display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:20px}
+.contact{text-align:center;background:radial-gradient(ellipse at bottom,#18294b,transparent 70%)}
+.contact p{color:var(--muted);margin:15px auto 25px}
+footer{text-align:center;padding:25px;color:var(--muted);border-top:1px solid #1d2c43;font-size:13px}
+footer span{color:var(--cyan)}
+@media(max-width:600px){
+header{padding:13px 4%;flex-wrap:wrap;gap:12px}
+nav{gap:13px;flex-wrap:wrap}
+nav a{font-size:12px}
+section{padding:65px 6%}
+.hero{min-height:75vh}
+}
+</style>
+</head>
+<body>
+
+<header>
+<a href="#home" class="logo">OMAR<span>.</span>TECH</a>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="tag">WELCOME TO MY DIGITAL WORLD</div>
+<h1>Hello, I'm <span>Omar</span></h1>
+<h2>Technology Enthusiast & Future IT Specialist</h2>
+<p>Exploring the world of Information Technology, Cloud Computing, Artificial Intelligence and Cybersecurity.</p>
+<a class="btn" href="#about">Explore My Profile ↓</a>
+</section>
+
+<section id="about">
+<h2 class="section-title">About <span>Me</span></h2>
+<p class="subtitle">Discover my passion and journey</p>
+<div class="about">
+<p>My name is Omar. I am passionate about technology and the digital world. I enjoy learning how modern systems work, exploring new technologies and developing my technical knowledge.</p>
+<p style="margin-top:15px">My interests include Cloud Computing, Computer Networks, Artificial Intelligence, Cybersecurity and Web Development. I believe that continuous learning is the key to innovation.</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Technical <span>Interests</span></h2>
+<p class="subtitle">Technologies I am exploring and learning</p>
+<div class="cards">
+<div class="card">
+<div class="icon">☁️</div>
+<h3>Cloud Computing</h3>
+<p>Exploring cloud platforms, online infrastructure and modern hosting technologies.</p>
+</div>
+<div class="card">
+<div class="icon">🔐</div>
+<h3>Cybersecurity</h3>
+<p>Learning about digital security, privacy and protecting information systems.</p>
+</div>
+<div class="card">
+<div class="icon">🤖</div>
+<h3>Artificial Intelligence</h3>
+<p>Discovering AI technologies, machine learning and intelligent applications.</p>
+</div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>Web Development</h3>
+<p>Building websites using HTML, CSS and modern web technologies.</p>
+</div>
+<div class="card">
+<div class="icon">🖥️</div>
+<h3>Computer Networks</h3>
+<p>Understanding network communication, protocols and digital infrastructure.</p>
+</div>
+<div class="card">
+<div class="icon">💾</div>
+<h3>Databases</h3>
+<p>Exploring data organization, database systems and information management.</p>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">My <span>Projects</span></h2>
+<p class="subtitle">A journey of learning through practical work</p>
+<div class="cards">
+<div class="card">
+<div class="icon">💻</div>
+<h3>Personal Portfolio</h3>
+<p>A responsive personal website built using HTML and CSS and hosted on GitHub Pages.</p>
+</div>
+<div class="card">
+<div class="icon">☁️</div>
+<h3>Cloud Hosting</h3>
+<p>A practical introduction to cloud hosting and publishing websites online.</p>
+</div>
+<div class="card">
+<div class="icon">🌍</div>
+<h3>Digital Exploration</h3>
+<p>Learning about modern digital tools, internet technologies and IT solutions.</p>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Let's Connect</h2>
+<p>Interested in technology, innovation and learning new things?<br>Explore my work on GitHub.</p>
+<a class="btn" href="https://github.com/z450ultra" target="_blank" rel="noopener">Visit My GitHub ↗</a>
+</section>
+</main>
+
+<footer>
+<p>Designed & Built by <span>Omar</span></p>
+<p>© 2026 Omar Tech Profile | Powered by GitHub Pages</p>
+</footer>
+
+</body>
+</html>
